@@ -23,12 +23,12 @@
     padding: 2px;
 }
 
-#fizz{
+.fizz{
     background-color: green;
     color: white;
 }
 
-#buzz{
+.buzz{
     background-color: red;
     color: white;
 }
