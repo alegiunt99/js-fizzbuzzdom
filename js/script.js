@@ -7,13 +7,16 @@ console.log('OK JS');
 const boxesContainer = document.querySelector(".container"); 
 
 for (let numberBasic = 1; numberBasic < 101; numberBasic++) {
-
+    
     if(numberBasic % 3 === 0 && numberBasic % 5 === 0) {
         
         let numberBasic = "fizzbuzz";
-        
+
         console.log(numberBasic);
 
+        let boxesNumber = `<div class="numbers fizzbuzz">fizzbuzz</div>`;
+
+        boxesContainer.innerHTML += boxesNumber;
 
     } else if(numberBasic % 5 === 0){
         
@@ -21,15 +24,28 @@ for (let numberBasic = 1; numberBasic < 101; numberBasic++) {
 
         console.log(numberBasic)
 
+        let boxesNumber = `<div class="numbers buzz">buzz</div>`;
+
+        boxesContainer.innerHTML += boxesNumber;
+
+
     } else if (numberBasic % 3 === 0){
 
         let numberBasic = "fizz";
     
         console.log(numberBasic);
+
+        let boxesNumber = `<div class="numbers fizz">fizz</div>`;
+
+        boxesContainer.innerHTML += boxesNumber;
     
     } else {
     
         console.log(numberBasic);
+
+        let boxesNumber = `<div class="numbers number-basic">${numberBasic}</div>`;
+
+        boxesContainer.innerHTML += boxesNumber;
     }
     
 }
