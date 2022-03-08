@@ -8,11 +8,12 @@ const boxesContainer = document.querySelector(".container");
 
 for (let numberBasic = 1; numberBasic < 101; numberBasic++) {
 
-    if(numberBasic % 3 === 0){
-
-        let numberBasic = "fizz";
-
+    if(numberBasic % 3 === 0 && numberBasic % 5 === 0) {
+        
+        let numberBasic = "fizzbuzz";
+        
         console.log(numberBasic);
+
 
     } else if(numberBasic % 5 === 0){
         
@@ -20,12 +21,12 @@ for (let numberBasic = 1; numberBasic < 101; numberBasic++) {
 
         console.log(numberBasic)
 
-    } else if (numberBasic % 3 === 0 && numberBasic % 5 === 0) {
-        
-        let numberBasic = "fizz" + "buzz";
-        
-        console.log(numberBasic);
+    } else if (numberBasic % 3 === 0){
 
+        let numberBasic = "fizz";
+    
+        console.log(numberBasic);
+    
     } else {
     
         console.log(numberBasic);
