@@ -7,7 +7,9 @@ console.log('OK JS');
 const boxesContainer = document.querySelector(".container"); 
 
 for (let numberBasic = 1; numberBasic < 101; numberBasic++) {
-    
+
+
+    // numeri divisibili sia per 3 che per 5 : fizzbuzz
     if(numberBasic % 3 === 0 && numberBasic % 5 === 0) {
         
         let numberBasic = "fizzbuzz";
@@ -18,6 +20,8 @@ for (let numberBasic = 1; numberBasic < 101; numberBasic++) {
 
         boxesContainer.innerHTML += boxesNumber;
 
+
+    // numeri divisibili per 5: buzz
     } else if(numberBasic % 5 === 0){
         
         let numberBasic = "buzz";
@@ -28,7 +32,7 @@ for (let numberBasic = 1; numberBasic < 101; numberBasic++) {
 
         boxesContainer.innerHTML += boxesNumber;
 
-
+    // Numeri divisibili per 3: fizz 
     } else if (numberBasic % 3 === 0){
 
         let numberBasic = "fizz";
@@ -39,6 +43,9 @@ for (let numberBasic = 1; numberBasic < 101; numberBasic++) {
 
         boxesContainer.innerHTML += boxesNumber;
     
+
+
+    // numeri normali 
     } else {
     
         console.log(numberBasic);
